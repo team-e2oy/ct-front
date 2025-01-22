@@ -1,3 +1,16 @@
+# 세팅
+```bash
+npm install
+```
+
+# 실행
+```bash
+npm run dev
+```
+
+# 빌드
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
