@@ -1,5 +1,6 @@
 import {beggarLifeStore} from "../store/BeggarStore.ts";
 import BeggarEmotion from "./BeggarEmotion.tsx"
+import {Link} from "react-router";
 
 const BeggarLife = () => {
 
@@ -19,6 +20,8 @@ const BeggarLife = () => {
 
   return (
     <>
+      <Link to="/"><button>HOME</button></Link>
+
       <h1>거지키우기</h1>
       <BeggarEmotion />
       <div className="card">
