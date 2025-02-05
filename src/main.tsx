@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { BrowserRouter } from "react-router"
 import './index.css'
-// import App from './App.tsx'
+// import App from "./pages/App.tsx";
 import SampleApp from "./sample/SampleApp.tsx";
 
 const queryClient = new QueryClient();
