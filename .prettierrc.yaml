@@ -1,0 +1,13 @@
+# please see https://prettier.io/docs/options
+
+printWidth: 80 # 줄바꿈 할 length
+tabWidth: 2 # 들여쓰기 간격
+useTabs: false # 공백 대신 Tab 사용 여부
+semi: false # true - 모든 문장의 끝에 세미콜론 사용, false - ASI 오류가 발생할 수 있는 줄의 시작 부분에만 세미콜론 사용
+singleQuote: true # 문자열 single Quote 옵션
+quoteProps: "as-needed" # 객체 속성 Quote 옵션
+jsxSingleQuote: false # JSX single Quote 옵션
+trailingComma: "es5" # 다중 줄 쉼표로 구분된 구문 구조에서는 가능한 한 끝에 쉼표를 인쇄 (default "all")
+bracketSpacing: true # 객체 brackets 사이에 공백 여부
+bracketSameLine: false # multi-line HTML의 마지막 > 내릴지 여부 (default false)
+arrowParens: "always" # 유일한 화살표 함수 매개변수 주위에 괄호를 포함

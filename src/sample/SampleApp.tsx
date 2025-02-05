@@ -5,9 +5,7 @@ import {lazy} from "react";
 
 // Suspense 로딩 예시 2초 뒤에 Login Page import
 const Login = lazy(() =>
-  new Promise((resolve) =>
-    setTimeout(() => resolve(import('./pages/LoginPage.tsx')), 2000)
-  )
+  new Promise((resolve) => setTimeout(() => resolve(import('./pages/Login.tsx')), 2000))
 );
 
 const SampleApp = () => {
