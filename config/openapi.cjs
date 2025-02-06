@@ -2,12 +2,9 @@ const { execSync } = require('node:child_process');
 const fs = require('fs');
 const host = process.argv[2];
 
+// 아래의 그룹 세팅
 const GROUP_GENERATOR_URLS = [
-  'common-group',
-  'mypage-group',
-  'opinion-group',
-  'event-group',
-  'point-group',
+  'member-group',
 ];
 
 const startDate = new Date();
@@ -25,7 +22,7 @@ const generator = async () => {
     let request =
       'openapi-generator-cli generate -i ' +
       host +
-      '/api/v3/api-docs/' +
+      '/v3/api-docs/' +
       group +
       ' -g typescript-axios -o ./src/restapi -c ./openapitools.json --global-property skipFormModel=false --skip-validate-spec';
     await execSync(request);
