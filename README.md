@@ -1,63 +1,48 @@
-# 세팅
-```bash
-npm install
-```
+# 개발환경
 
-# 실행
-```bash
-npm run dev
-```
+- NodeJS - v22.13.1 (LTS)
+- npm - v10.9.2
 
-# 빌드
+---
+
+# ⚙️ 세팅
+
+라이브러리 설치 `npm install`
+
+## 코드 포맷팅 (Prettier)
+
+커스텀 룰 사용 (.prettierrc.yaml 파일 참조)
+
+<details>
+<summary>Intellij 세팅</summary>
+<ul>
+<li>1. Plugins > Prettier 플러그인 설치</li>
+<li>2. Languages & Frameworks > JavaScript > Prettier<ul>
+<li>Manual Prettier configuration 선택</li>
+<li>Run on save 체크</li>
+</ul>
+</li>
+    </ul>
+</details>
 
 
-# React + TypeScript + Vite
+## OpenAPI Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. ct-api 어플리케이션을 로컬에서 실행 
+2. `npm run openapi`
+3. `src/restapi` 디렉토리에 파일이 자동생성되는 것을 확인
 
-Currently, two official plugins are available:
+>**Warning**
+> 자바 버전은 환경 변수에 11 버전 이상으로 설정되어있어야 함
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+# ▶️ 실행
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`npm run dev`
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# 🔧 배포
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+(멍청한 표정을 짓고있는 이모티콘)
