@@ -5,8 +5,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { BrowserRouter } from 'react-router'
 import './index.css'
 import LoadingSpinner from './components/common/LoadingSpinner.tsx'
-// import App from './pages/App.tsx'
-import SampleApp from './sample/SampleApp.tsx'
+import App from './pages/App.tsx'
 
 const queryClient = new QueryClient()
 
@@ -15,8 +14,8 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
       <QueryClientProvider client={queryClient}>
         <Suspense fallback={<LoadingSpinner isLoading={true} />}>
-          {/*<App />*/}
-          <SampleApp />
+          <App />
+          {/*<SampleApp />*/}
         </Suspense>
         <ReactQueryDevtools initialIsOpen={true} />
       </QueryClientProvider>
