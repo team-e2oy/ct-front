@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? '' : '')}>
+          Home
+        </NavLink>
       </footer>
     </>
   )

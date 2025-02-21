@@ -5,16 +5,12 @@ const SampleIndex = () => {
     <>
       <h2>샘플 인덱스 페이지</h2>
       <div>
-        <Link to="/login">
-          <button>로그인 페이지</button>
+        <Link to="/intro">
+          <button>인트로 페이지</button>
         </Link>
       </div>
       <br />
-      <div>
-        <Link to="/regist">
-          <button>회원가입 페이지</button>
-        </Link>
-      </div>
+      <div></div>
     </>
   )
 }
